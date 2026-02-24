@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 /*   INFRA   */
 
 body {
     background-color: #a9b7c2;
+    background-image: radial-gradient(#7e8991 1px, transparent 1px);
+    background-size: 10px 10px;
     font-family: Verdana, Arial, Helvectica, sans-serif;
     font-size: 12px;
     margin: 0;
@@ -32,7 +37,7 @@ body {
         to bottom,
         #a7d0f5 0%,
         #6db3e6 10%,
-        #4a90d6 60%,
+        #4a90d6 20%,
         #357abd 100%
     );
     background-color: #649fcc; /* #649fcc */
@@ -49,11 +54,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 70%;
+    height: 20%;
 
     background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3),
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0)
     );
@@ -90,10 +95,17 @@ h1 sup {
     position: relative;
     background-color: #cae5fa;
     color: #132f45;
+    /* color: #132f45; */
     padding: 5px;
     text-align: center;
     font-size: 10px;
-    border: 1px solid #2f66b1;
+    /* outline: 1px solid #2f66b1; */
+    /* outline-offset: 0px; */
+    /* border-top: 2px solid white;  */
+    /* border-left: 2px solid white;  */
+    /* border-right: 1px solid #2f66b1;  */
+    /* border-bottom: 1px solid #2f66b1;  */
+    border: 1px solid #2f66b1; 
 }
 
 .sub-header p {
@@ -103,7 +115,7 @@ h1 sup {
 /*   BODY   */
 
 .content-wrapper {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
 }
 
@@ -111,7 +123,7 @@ h1 sup {
     flex: 1;
     background-color: #ffffff;
     padding-right: 10px;
-    border-right: 1px solid black;
+    border-right: 1px dashed #2f66b1;
 }
 
 .sidebar-title {
@@ -123,29 +135,100 @@ h1 sup {
     border: 1px solid #2f66b1;
 }
 
-.sidebar-button {
+.sidebar ul {
+	font-size: 16px;
+}
+
+/*   MAIN CONTENT   */
+
+.main-content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0d3b73;
+    font-size: 16px;
+    flex: 3;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.main-content h2 {
+	font-family: "Instrument Serif", "Libre Caslon Display", "Times New Roman", Georgia, Times, serif;
+	/* font-style: italic; */
+	font-weight: normal;
+	font-size: 80px;
+	letter-spacing: 2px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.main-content h3 {
+	font-family: "Libre Caslon Display", "Times New Roman", Georgia, Times, serif;
+	/* font-style: italic; */
+	font-weight: normal;
+	font-size: 40px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.main-content p {
+	margin: 0px;
+	margin-top: 5px;
+}
+
+.main-content p.italic {
+    font-family: ui-serif, "Times New Roman", Georgia, Times, serif;
+    font-size: 16px;
+    padding: 0px;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* COMPONENTS */
+
+.box-heading-shadow {
+    background-color: #cae5fa;
+    padding: 5px;
+    margin: 0px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #2f66b1;
+    border-right: 1px solid #2f66b1;
+}
+
+.box-heading {
     background-color: #cae5fa;
     padding: 5px;
     margin: 0px;
     border-bottom: 1px solid #2f66b1;
 }
 
-.sidebar-box {
+.box {
     background-color: #ffffff;
     margin: 0px;
+    margin-bottom: 40px;
     border: 1px solid #2f66b1;
 }
 
-/*   MAIN CONTENT   */
-
-.main-content {
-    flex: 3;
-    border: 0px;
-    padding: 20px;
+.box p {
+    margin: 0px;
+    padding: 10px;
 }
+
+.scroll-box {
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
     .content-wrapper {
+        display: flex;
         flex-direction: column;
     }
 
