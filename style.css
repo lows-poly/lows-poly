@@ -1,5 +1,7 @@
+/*   INFRA   */
+
 body {
-    background-color: #d5e3eb;
+    background-color: #a9b7c2;
     font-family: Verdana, Arial, Helvectica, sans-serif;
     font-size: 12px;
     margin: 0;
@@ -12,6 +14,16 @@ body {
     margin: 20px auto;
     background-color: #ffffff;
     border: 1px solid black;
+    padding: 10px;
+}
+
+/*   HEADER   */
+
+.header-container {
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .header {
@@ -19,8 +31,8 @@ body {
     background: linear-gradient(
         to bottom,
         #a7d0f5 0%,
-        #6db3e6 35%,
-        #4a90d6 45%,
+        #6db3e6 10%,
+        #4a90d6 60%,
         #357abd 100%
     );
     background-color: #649fcc; /* #649fcc */
@@ -37,13 +49,13 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 50%;
+    height: 70%;
 
     background: linear-gradient(
         to bottom,
-        rgba(255,255,255,0.7),
-        rgba(255,255,255,0.15),
-        rgba(255,255,255,0)
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0)
     );
 }
 
@@ -62,36 +74,73 @@ h1 sup {
     font-weight: normal;
 }
 
-.header-container {
-    position: relative;
-    background-color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-
 .header-corner {
     color: #ffffff;
-    margin: 5px;
-    margin-right: 7px;
+    margin: 2px;
     position: absolute;
-    bottom: 8px;
+    bottom: 5px;
     right: 12px;
     font-size: 12px;
 }
 
+/*   SUB-HEADER   */
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #cae5fa;
+    color: #132f45;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid #2f66b1;
+}
+
+.sub-header p {
+    margin: 0px;
+}
+
+/*   BODY   */
+
 .content-wrapper {
+    margin-top: 10px;
     display: flex;
 }
 
 .sidebar {
+    flex: 1;
     background-color: #ffffff;
-    padding: 15px;
-    border-right: 2px solid black;
+    padding-right: 10px;
+    border-right: 1px solid black;
 }
 
+.sidebar-title {
+    background-color: #cae5fa;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #2f66b1;
+}
+
+.sidebar-button {
+    background-color: #cae5fa;
+    padding: 5px;
+    margin: 0px;
+    border-bottom: 1px solid #2f66b1;
+}
+
+.sidebar-box {
+    background-color: #ffffff;
+    margin: 0px;
+    border: 1px solid #2f66b1;
+}
+
+/*   MAIN CONTENT   */
+
 .main-content {
-    flex: 1;
+    flex: 3;
+    border: 0px;
     padding: 20px;
 }
 
