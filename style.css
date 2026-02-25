@@ -52,7 +52,7 @@ body {
     padding-bottom: 30px;
     width: 100%;
     text-align: center;
-    border: 2px solid #2f66b1;
+    border: 1px solid #2f66b1;
     border-radius: 7px;
     margin-bottom: 10px;
 }
@@ -123,6 +123,7 @@ h1 sup {
 }
 
 .sidebar {
+    font-size: 14px;
     position: relative;
     flex: 0 0 200px;
     margin: 0px;
@@ -130,11 +131,24 @@ h1 sup {
     background-color: transparent;
 }
 
-.sidebar-title {
-    background-color: #cae5fa;
+.sidebar .box-heading-shadow {
+    font-weight: normal;
     text-align: center;
-    margin-top: 0px;
-    border: 1px solid #2f66b1;
+    color: white;
+    background: linear-gradient(
+         to bottom,
+         #cae5fa 0%,
+         #6db3e6 30%,
+         #4a90d6 40%,
+         #357abd 100%
+    );
+    background-color: #649fcc; /* #649fcc */
+    border: 0px;
+}
+
+.sidebar .box {
+    background-color: #ffffff;
+    border: 1px solid #357abd;
 }
 
 .sidebar ul {
@@ -203,14 +217,12 @@ h1 sup {
 }
 
 .box-heading {
-    background-color: #cae5fa;
     padding: 5px;
     margin: 0px;
     border-bottom: 1px solid #2f66b1;
 }
 
 .box {
-    background-color: #ffffff;
     margin: 0px;
     border: 1px solid #2f66b1;
 }
