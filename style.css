@@ -4,48 +4,56 @@
 /*   INFRA   */
 
 body {
-    background-color: #a9b7c2;
-    background-image: radial-gradient(#7e8991 1px, transparent 1px);
+    background-color: #7aa4c4;
+    background-image: radial-gradient(#6486a1 1px, transparent 1px);
     background-size: 10px 10px;
     font-family: Verdana, Arial, Helvectica, sans-serif;
     font-size: 12px;
     margin: 0;
 }
 
-.container {
-    max-width: 800px;
+.container { 
+    max-width: 1000px;
     width: 95%;
-    height: 1000px;
     margin: 20px auto;
-    background-color: #ffffff;
-    border: 1px solid black;
+    height: 1000px;
+    background-color: transparent;
     padding: 10px;
 }
 
 /*   HEADER   */
 
 .header-container {
-    position: relative;
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: transparent;
     text-align: center;
-    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .header {
     position: relative;
     background: linear-gradient(
-        to bottom,
-        #a7d0f5 0%,
-        #6db3e6 10%,
-        #4a90d6 20%,
-        #357abd 100%
+         to bottom,
+         #6db3e6 0%,
+         #4a90d6 30%,
+         #357abd 100%
     );
     background-color: #649fcc; /* #649fcc */
     color: #ffffff;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
     text-align: center;
-    border: 1px solid #2f66b1;
-    border-radius: 5px;
+    border: 2px solid #2f66b1;
+    border-radius: 7px;
+    margin-bottom: 10px;
 }
 
 .header::before {
@@ -54,7 +62,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 20%;
+    height: 30%;
 
     background: linear-gradient(
         to bottom,
@@ -90,21 +98,15 @@ h1 sup {
 
 /*   SUB-HEADER   */
 .sub-header {
+    width: 100%;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
-    position: relative;
     background-color: #cae5fa;
     color: #132f45;
-    /* color: #132f45; */
     padding: 5px;
     text-align: center;
     font-size: 10px;
-    /* outline: 1px solid #2f66b1; */
-    /* outline-offset: 0px; */
-    /* border-top: 2px solid white;  */
-    /* border-left: 2px solid white;  */
-    /* border-right: 1px solid #2f66b1;  */
-    /* border-bottom: 1px solid #2f66b1;  */
     border: 1px solid #2f66b1; 
 }
 
@@ -112,54 +114,54 @@ h1 sup {
     margin: 0px;
 }
 
-/*   BODY   */
+/*   BODY % SIDEBAR   */
 
 .content-wrapper {
-    margin-top: 15px;
+    gap: 20px;
     display: flex;
 }
 
 .sidebar {
-    flex: 1;
-    background-color: #ffffff;
-    padding-right: 10px;
-    border-right: 1px dashed #2f66b1;
+    position: relative;
+    flex: 0 0 200px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
 }
 
 .sidebar-title {
     background-color: #cae5fa;
     text-align: center;
-    padding: 5px;
     margin-top: 0px;
-    margin-bottom: 10px;
     border: 1px solid #2f66b1;
 }
 
 .sidebar ul {
-	font-size: 16px;
+    font-size: 16px;
 }
 
 /*   MAIN CONTENT   */
 
 .main-content {
+    background-color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #0d3b73;
     font-size: 16px;
     flex: 3;
-    border: 0px;
-    padding-left: 10px;
-    padding-right: 20px;
+    border: 1px solid black;
+    padding: 20px;
 }
 
 .main-content h2 {
-	font-family: "Instrument Serif", "Libre Caslon Display", "Times New Roman", Georgia, Times, serif;
-	/* font-style: italic; */
-	font-weight: normal;
-	font-size: 80px;
-	letter-spacing: 2px;
-	padding: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+    flex: 1;
+    font-family: "Instrument Serif", "Libre Caslon Display", "Times New Roman", Georgia, Times, serif;
+    /* font-style: italic; */
+    font-weight: normal;
+    font-size: 80px;
+    letter-spacing: 2px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .main-content h3 {
@@ -209,7 +211,6 @@ h1 sup {
 .box {
     background-color: #ffffff;
     margin: 0px;
-    margin-bottom: 40px;
     border: 1px solid #2f66b1;
 }
 
