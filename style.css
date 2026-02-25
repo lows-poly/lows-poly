@@ -43,7 +43,7 @@ body {
     background: linear-gradient(
          to bottom,
          #cae5fa 0%,
-         #6db3e6 30%,
+         #6db3e6 25%,
          #4a90d6 35%,
          #357abd 100%
     );
@@ -152,8 +152,16 @@ h1 sup {
     border: 1px solid #357abd;
 }
 
-.sidebar ul {
-    font-size: 16px;
+.sidebar button {
+    width: 94%;
+    background-color: #649fcc;
+    text-decoration: none;
+    margin: 5px;
+    margin-bottom: 2px;
+    padding: 5px;
+    border: 0px;
+    border-right: 2px solid #214e7a;
+    border-bottom: 2px solid #214e7a;
 }
 
 /*   MAIN CONTENT   */
