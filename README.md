@@ -1,1 +1,1 @@
-![Picture](https://github.com/LowsPoly/LowsPoly/blob/main/EMB.png)
+![Picture](https://github.com/LowsPoly/LowsPoly/blob/main/emblem_frutiger.png)
